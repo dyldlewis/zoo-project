@@ -1,0 +1,29 @@
+
+<br>
+<div>
+  <div class="well" *ngIf="childSelectedAnimal">
+    <h1>{{childSelectedAnimal.species}}</h1>
+    <h3>Edit Animal</h3>
+
+    <input [(ngModel)]="childSelectedAnimal.species">
+    <label>Species</label><br>
+    <input [(ngModel)]="childSelectedAnimal.name">
+    <label>Name</label><br>
+    <input [(ngModel)]="childSelectedAnimal.age">
+    <label>Age</label><br>
+    <input [(ngModel)]="childSelectedAnimal.diet">
+    <label>Diet</label><br>
+    <input [(ngModel)]="childSelectedAnimal.location">
+    <label>Location</label><br>
+    <input [(ngModel)]="childSelectedAnimal.caretakers">
+    <label>Caretakers</label><br>
+    <input [(ngModel)]="childSelectedAnimal.sex">
+    <label>Sex</label><br>
+    <input [(ngModel)]="childSelectedAnimal.likes">
+    <label>Likes</label><br>
+    <input [(ngModel)]="childSelectedAnimal.dislikes">
+    <label>Dislikes</label><br>
+
+    <button (click)="doneButtonClicked()">Done</button>
+  </div>
+</div>

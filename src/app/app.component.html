@@ -1,2 +1,3 @@
-<app-animal-list [childAnimalList]="masterAnimalList"></app-animal-list>
+<app-animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></app-animal-list>
 <app-new-animal (newAnimalSender)="addAnimal($event)"></app-new-animal>
+<app-edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></app-edit-animal>

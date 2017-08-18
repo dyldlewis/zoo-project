@@ -9,7 +9,12 @@ import { Animal } from '../animal.model';
 export class AnimalListComponent implements OnInit {
 
   @Input() childAnimalList: Animal[];
+  @Output() clickSender = new EventEmitter();
 
+
+  editButtonHasBeenClicked(kegToEdit: Animal) {
+    this.clickSender.emit(kegToEdit);
+  }
   ngOnInit() {
   }
 

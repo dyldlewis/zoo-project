@@ -7,6 +7,7 @@ import { Animal } from './animal.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  selectedAnimal = null;
   title = 'app works!';
   masterAnimalList: Animal[] = [
     new Animal("Roger", "Monkey", 3, "Carnivore", "Magic Tree House", 3, "Male", "Teryaiki Sauce", "Humans"),
@@ -17,5 +18,13 @@ export class AppComponent {
   addAnimal(newAnimalFromChild: Animal) {
     this.masterAnimalList.push(newAnimalFromChild);
   }
+
+  editAnimal(clickedAnimal){
+  this.selectedAnimal = clickedAnimal;
+}
+
+finishedEditing(){
+  this.selectedAnimal = null;
+}
 
 }
