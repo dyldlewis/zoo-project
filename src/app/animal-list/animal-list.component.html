@@ -1,6 +1,11 @@
 <h1> Current Animals </h1>
+  <select class="drop" (change)="onChange($event.target.value)">
+    <option value="allAniamls" selected="selected">All animals</option>
+    <option value="youngAnimal">Young Animals</option>
+    <option value="matureAnimal">Mature Animals</option>
+  </select><h5>Filter by age<h5>
 <div class="row">
-  <ul *ngFor="let currentAnimal of childAnimalList">
+  <ul *ngFor="let currentAnimal of childAnimalList | age:filterByAge">
     <div class="col-md-6">
       <div class="panel panel-info">
         <div class="panel-heading">

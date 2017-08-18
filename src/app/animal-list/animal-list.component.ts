@@ -7,7 +7,7 @@ import { Animal } from '../animal.model';
   styleUrls: ['./animal-list.component.css']
 })
 export class AnimalListComponent implements OnInit {
-
+  filterByAge: string = "allAnimals";
   @Input() childAnimalList: Animal[];
   @Output() clickSender = new EventEmitter();
 
@@ -15,6 +15,11 @@ export class AnimalListComponent implements OnInit {
   editButtonHasBeenClicked(kegToEdit: Animal) {
     this.clickSender.emit(kegToEdit);
   }
+
+  onChange(optionFromMenu) {
+  this.filterByAge = optionFromMenu;
+}
+
   ngOnInit() {
   }
 
