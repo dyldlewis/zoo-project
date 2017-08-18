@@ -15,9 +15,3 @@ img {
   width: 250px;
   height: 150px;
 }
-
-.squid {
-  width: 100px;
-  height: 100px;
-  flex-wrap: wrap;
-}
