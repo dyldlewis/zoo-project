@@ -6,21 +6,21 @@
   </select><h5>Filter by age<h5>
 <div class="row">
   <ul *ngFor="let currentAnimal of childAnimalList | age:filterByAge">
-    <div class="col-md-6">
-      <div class="panel panel-info">
+    <div class="col-md-12">
+      <div class="panel panel-warning">
         <div class="panel-heading">
           <h1>{{currentAnimal.species}}</h1>
         </div>
         <div class="panel-body">
-          <li>{{currentAnimal.name}}</li>
-          <li>{{currentAnimal.age}}</li>
-          <li>{{currentAnimal.diet}}</li>
-          <li>{{currentAnimal.location}}</li>
-          <li>{{currentAnimal.sex}}</li>
-          <li>{{currentAnimal.caretakers}}</li>
-          <li>{{currentAnimal.likes}}</li>
-          <li>{{currentAnimal.dislikes}}</li>
-          <button (click)="editButtonHasBeenClicked(currentAnimal)" class="btn btn-info">Edit</button>
+          <li>name: {{currentAnimal.name}}</li>
+          <li>age: {{currentAnimal.age}}</li>
+          <li>diet: {{currentAnimal.diet}}</li>
+          <li>location: {{currentAnimal.location}}</li>
+          <li>sex: {{currentAnimal.sex}}</li>
+          <li>caretakers: {{currentAnimal.caretakers}}</li>
+          <li>likes: {{currentAnimal.likes}}</li>
+          <li>dislikes: {{currentAnimal.dislikes}}</li>
+          <button (click)="editButtonHasBeenClicked(currentAnimal)" class="btn btn-warning">Edit</button>
         </div>
       </div>
     </div>

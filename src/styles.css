@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+.container {
+  font-family: bookman;
+  color: green;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  color: green;
+}
+
+img {
+  width: 250px;
+  height: 150px;
+}
+
+.squid {
+  width: 100px;
+  height: 100px;
+  flex-wrap: wrap;
+}
