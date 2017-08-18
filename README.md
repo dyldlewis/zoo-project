@@ -1,4 +1,4 @@
-# zoo
+# Zoo
 
 This README outlines the details of collaborating on this Angular application.
 
@@ -9,6 +9,8 @@ You will need the following things properly installed on your computer.
 * [Git](https://git-scm.com/)
 * [Node.js](https://nodejs.org/) (with NPM)
 * [Anuglar Cli](https://angularjs.org)
+* [Bower](https://www.learnhowtoprogram.com/javascript/modern-js-apps/introducing-bower)
+* [typeScript](https://www.learnhowtoprogram.com/javascript/angular-js/typescript-introduction-and-installation)
 
 ## Installation
 
