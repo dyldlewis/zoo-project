@@ -14,6 +14,8 @@ export class AppComponent {
     new Animal("Stevie", "Hippo", 2, "Omnivore", "Swamp City", 1, "Male", "Watermelons", "Anything Green"),
   ]
 
-
+  addAnimal(newAnimalFromChild: Animal) {
+    this.masterAnimalList.push(newAnimalFromChild);
+  }
 
 }
