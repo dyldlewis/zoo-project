@@ -1,14 +1,23 @@
 <h1> Current Animals </h1>
-
-<ul *ngFor="let currentAnimal of childAnimalList">
-  <li><h1>{{currentAnimal.name}}</h1></li>
-  <li>{{currentAnimal.species}}</li>
-  <li>{{currentAnimal.age}}</li>
-  <li>{{currentAnimal.diet}}</li>
-  <li>{{currentAnimal.location}}</li>
-  <li>{{currentAnimal.sex}}</li>
-  <li>{{currentAnimal.caretakers}}</li>
-  <li>{{currentAnimal.likes}}</li>
-  <li>{{currentAnimal.dislikes}}</li>
-  <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit</button>
-</ul>
+<div class="row">
+  <ul *ngFor="let currentAnimal of childAnimalList">
+    <div class="col-md-6">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h1>{{currentAnimal.species}}</h1>
+        </div>
+        <div class="panel-body">
+          <li>{{currentAnimal.name}}</li>
+          <li>{{currentAnimal.age}}</li>
+          <li>{{currentAnimal.diet}}</li>
+          <li>{{currentAnimal.location}}</li>
+          <li>{{currentAnimal.sex}}</li>
+          <li>{{currentAnimal.caretakers}}</li>
+          <li>{{currentAnimal.likes}}</li>
+          <li>{{currentAnimal.dislikes}}</li>
+          <button (click)="editButtonHasBeenClicked(currentAnimal)" class="btn btn-info">Edit</button>
+        </div>
+      </div>
+    </div>
+  </ul>
+</div>

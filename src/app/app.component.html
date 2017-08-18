@@ -1,3 +1,11 @@
-<app-animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></app-animal-list>
-<app-new-animal (newAnimalSender)="addAnimal($event)"></app-new-animal>
-<app-edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></app-edit-animal>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <app-animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></app-animal-list>
+    </div>
+    <div class="col-md-6">
+      <app-new-animal (newAnimalSender)="addAnimal($event)"></app-new-animal>  
+    </div>
+  </div>
+  <app-edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></app-edit-animal>
+</div>
